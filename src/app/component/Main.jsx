@@ -6,7 +6,9 @@ import ColorManipulator from 'material-ui/lib/utils/color-manipulator';
 import Colors from 'material-ui/lib/styles/colors';
 import Spacing from 'material-ui/lib/styles/spacing';
 import zIndex from 'material-ui/lib/styles/zIndex';
-import Bar from './Bar';
+import Bar from '../container/Bar';
+import Leftnav from '../container/Leftnav';
+import Page from '../container/Page';
 
 const muiTheme = getMuiTheme({
   spacing: Spacing,
@@ -35,7 +37,11 @@ class Main extends React.Component {
   render(){
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
-        <Bar />
+        <div>
+          <Bar />
+          <Leftnav />
+          <Page />
+        </div>
       </MuiThemeProvider>
     );
   }
