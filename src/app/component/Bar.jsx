@@ -3,7 +3,9 @@ import AppBar from 'material-ui/lib/app-bar';
 import IconButton from 'material-ui/lib/icon-button';
 import IconMenu from 'material-ui/lib/menus/icon-menu';
 import MenuItem from 'material-ui/lib/menus/menu-item';
-import ContentAdd from 'material-ui/lib/svg-icons/content/add';
+import MoreVertIcon from 'material-ui/lib/svg-icons/navigation/more-vert';
+import Info from 'material-ui/lib/svg-icons/action/info';
+import Cloud from './cloud';
 
 class Bar extends React.Component {
   constructor(props){
@@ -19,14 +21,14 @@ class Bar extends React.Component {
       iconElementRight={
         <IconMenu
           iconButtonElement={
-            <IconButton><ContentAdd /></IconButton>
+            <IconButton><MoreVertIcon /></IconButton>
           }
           targetOrigin={{horizontal: 'right', vertical: 'top'}}
           anchorOrigin={{horizontal: 'right', vertical: 'top'}}
         >
-          <MenuItem primaryText="page1" onTouchTap={()=>{this.props.closeleftnav();this.props.page1();}} />
+          <MenuItem primaryText="page1" onTouchTap={()=>{this.props.closeleftnav();this.props.page1();}} leftIcon={<Cloud />} />
           <MenuItem primaryText="page2" onTouchTap={()=>{this.props.closeleftnav();this.props.page2();}} />
-          <MenuItem primaryText="page3" onTouchTap={()=>{this.props.closeleftnav();this.props.page3();}} />
+          <MenuItem primaryText="page3" onTouchTap={()=>{this.props.closeleftnav();this.props.page3();}} leftIcon={<Info />} />
         </IconMenu>
       }
       
