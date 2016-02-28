@@ -13,7 +13,7 @@ function mapDispatch(dispatch){
     openleftnav:()=>dispatch({type:"openleftnav"}),
     closeleftnav:()=>dispatch({type:"closeleftnav"}),
     page1:()=>dispatch({type:"page1"}),
-    page2:()=>dispatch({type:"page2"}),
+    about:()=>dispatch({type:"about"}),
     page3:()=>dispatch({type:"page3"})
   }
 }

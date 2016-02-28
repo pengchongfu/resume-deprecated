@@ -11,7 +11,7 @@ function Reducer(state=initstate,action){
       return Object.assign({},state,{leftnav:false});
     case "page1":
       return Object.assign({},state,{page:1});
-    case "page2":
+    case "about":
       return Object.assign({},state,{page:2});
     case "page3":
       return Object.assign({},state,{page:3});

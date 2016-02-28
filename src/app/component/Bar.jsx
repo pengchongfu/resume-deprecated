@@ -5,7 +5,7 @@ import IconMenu from 'material-ui/lib/menus/icon-menu';
 import MenuItem from 'material-ui/lib/menus/menu-item';
 import MoreVertIcon from 'material-ui/lib/svg-icons/navigation/more-vert';
 import Info from 'material-ui/lib/svg-icons/action/info';
-import Cloud from './cloud';
+import GithubLogo from './GithubLogo';
 
 class Bar extends React.Component {
   constructor(props){
@@ -26,9 +26,8 @@ class Bar extends React.Component {
           targetOrigin={{horizontal: 'right', vertical: 'top'}}
           anchorOrigin={{horizontal: 'right', vertical: 'top'}}
         >
-          <MenuItem primaryText="page1" onTouchTap={()=>{this.props.closeleftnav();this.props.page1();}} leftIcon={<Cloud />} />
-          <MenuItem primaryText="page2" onTouchTap={()=>{this.props.closeleftnav();this.props.page2();}} />
-          <MenuItem primaryText="page3" onTouchTap={()=>{this.props.closeleftnav();this.props.page3();}} leftIcon={<Info />} />
+          <MenuItem primaryText="GITHUB" leftIcon={<GithubLogo />} href={"https://github.com/steinsphang/resume"} target="_blank" />
+          <MenuItem primaryText="ABOUT" onTouchTap={()=>{this.props.closeleftnav();this.props.about();}} leftIcon={<Info />} />
         </IconMenu>
       }
       
