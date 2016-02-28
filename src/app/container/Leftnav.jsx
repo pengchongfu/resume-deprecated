@@ -12,9 +12,9 @@ function mapDispatch(dispatch){
   return {
     openleftnav:()=>dispatch({type:"openleftnav"}),
     closeleftnav:()=>dispatch({type:"closeleftnav"}),
-    page1:()=>dispatch({type:"page1"}),
+    homepage:()=>dispatch({type:"homepage"}),
     about:()=>dispatch({type:"about"}),
-    page3:()=>dispatch({type:"page3"})
+    more:()=>dispatch({type:"more"})
   }
 }
 

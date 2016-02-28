@@ -9,11 +9,11 @@ function Reducer(state=initstate,action){
       return Object.assign({},state,{leftnav:true});
     case "closeleftnav":
       return Object.assign({},state,{leftnav:false});
-    case "page1":
+    case "homepage":
       return Object.assign({},state,{page:1});
     case "about":
       return Object.assign({},state,{page:2});
-    case "page3":
+    case "more":
       return Object.assign({},state,{page:3});
     default:
       return state;

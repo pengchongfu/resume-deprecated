@@ -4,6 +4,9 @@ import MenuItem from 'material-ui/lib/menus/menu-item';
 import AppBar from 'material-ui/lib/app-bar';
 import IconButton from 'material-ui/lib/icon-button';
 import NavigationClose from 'material-ui/lib/svg-icons/navigation/close';
+import ActionHome from 'material-ui/lib/svg-icons/action/home';
+import Info from 'material-ui/lib/svg-icons/action/info';
+import More from 'material-ui/lib/svg-icons/notification/more';
 
 class Leftnav extends React.Component {
   constructor(props){
@@ -21,9 +24,9 @@ class Leftnav extends React.Component {
           iconElementLeft={<IconButton><NavigationClose /></IconButton>}
           onTouchTap={this.props.closeleftnav}
         />
-        <MenuItem onTouchTap={()=>{this.props.closeleftnav();this.props.page1();}}>page1</MenuItem>
-        <MenuItem onTouchTap={()=>{this.props.closeleftnav();this.props.page2();}}>page2</MenuItem>
-        <MenuItem onTouchTap={()=>{this.props.closeleftnav();this.props.page3();}}>page3</MenuItem>
+        <MenuItem leftIcon={<ActionHome />} onTouchTap={()=>{this.props.closeleftnav();this.props.homepage();}}>主页</MenuItem>
+        <MenuItem leftIcon={<Info />} onTouchTap={()=>{this.props.closeleftnav();this.props.about();}}>关于</MenuItem>
+        <MenuItem leftIcon={<More />} onTouchTap={()=>{this.props.closeleftnav();this.props.more();}}>其他</MenuItem>
       </LeftNav>      
     );
   }
