@@ -26,7 +26,7 @@ class Leftnav extends React.Component {
         />
         <MenuItem leftIcon={<ActionHome />} onTouchTap={()=>{this.props.closeleftnav();this.props.homepage();}}>主页</MenuItem>
         <MenuItem leftIcon={<Info />} onTouchTap={()=>{this.props.closeleftnav();this.props.about();}}>关于</MenuItem>
-        <MenuItem leftIcon={<More />} onTouchTap={()=>{this.props.closeleftnav();this.props.more();}}>其他</MenuItem>
+        <MenuItem leftIcon={<More />} onTouchTap={()=>{this.props.closeleftnav();this.props.more();}}>更多</MenuItem>
       </LeftNav>      
     );
   }
