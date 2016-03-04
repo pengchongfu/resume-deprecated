@@ -5,7 +5,7 @@ var page1=`
 # 联系方式
 
 - 手机：18810665001
-- Email：pengchongfu@gmail.com
+- Email：pengchongfu@126.com
 - 微信号：pengchongfu
 
 ---
@@ -14,42 +14,39 @@ var page1=`
 
 - 彭崇甫/男/1992
 - 本科/清华大学工程力学与航天航空工程专业/2015年7月毕业
-- 个人网站：pengchongfu.com
-- Github：https://github.com/steinsphang
-- 期望职位：Web前端开发
+- 个人网站：[pengchongfu.com](http://pengchongfu.com)
+- Github：[https://github.com/steinsphang](https://github.com/steinsphang)
+- 期望职位：前端开发工程师
 
 ---
 
-# 自我介绍
-本科所学专业为工程力学与航天航空工程，多为机械设计及力学分析方面的课程。对it技术感兴趣，
-平时喜欢电子产品，学习过c和单片机的课程，折腾过树莓派和arduino。毕业设计内容为使用java开发eclipse插件
-。自学web开发相关技术以及计算机基础知识，能看懂英文技术文档。
+# 项目经历
 
----
+实习（北京一维弦科技有限责任公司 2015.11)：
 
-# demo
-2015.11~12在北京一维弦科技有限责任公司 实习
-foundation5
+- 使用foundation5和node搭建公司主页
+- 实现从浏览器提交附件并发送邮件的功能
 
-网站
-使用node搭建个人网站
+个人网站：
 
-
+- 服务器采用node的express模块搭建
+- 使用html5的audio标签实现在线音乐功能
+- 使用node的nodemailer模块实现发送邮件功能
+- 使用reactjs编写、webpack打包简历
 
 ---
 
 # 技能清单
 
-- 计算机基础：了解基本的数据结构和算法知识以及网络原理
+- 计算机基础：了解基本的数据结构和算法以及网络原理知识
 - 前端语言：javascript、html、css
-- 版本控制：git
-- web开发：node react websocket
-- 前端工具：webpack
+- 开发工具：linux、git
+- 开发框架：jquery、ajax
 
 ---
 
 # 致谢
-感谢您花时间阅读我的简历。
+感谢您花时间阅读我的简历
 `;
 
 
@@ -62,7 +59,7 @@ var page2=`
 
 页面使用reactjs生成,调用material-ui的组件,使用redux进行数据流控制,记录各组件的状态，最后使用webpack打包
 
-主要有一下三个组件:
+主要有以下三个组件:
 
 1. Bar：页面上方的导航条
 2. Leftnav：页面左边的导航栏
@@ -75,17 +72,23 @@ var page2=`
 var page3=`
 # 更多
 
-刚学前端编程的时候写过几个小游戏,请点击[这里](http://pengchongfu.com/game)
+刚学前端编程的时候写过几个小游戏,请点击[这里](http://pengchongfu.com)
 `;
 page1=Marked(page1);
 page2=Marked(page2);
 page3=Marked(page3);
 
-var arr=page3.split("<a");
-for(let i=0,l=arr.length-1;i<l;i++){
-  arr[i]+='<a target="_blank"';
+var arr3=page3.split("<a");
+for(let i=0,l=arr3.length-1;i<l;i++){
+  arr3[i]+='<a target="_blank"';
 }
-page3=arr.join('');
+page3=arr3.join('');
+
+var arr1=page1.split("<a");
+for(let i=0,l=arr1.length-1;i<l;i++){
+  arr1[i]+='<a target="_blank"';
+}
+page1=arr1.join('');
 
 
 class Page extends React.Component {
