@@ -5,7 +5,7 @@ var page1=`
 # 联系方式
 
 - 手机：18810665001
-- Email：pengchongfu@126.com
+- Email：pengchongfu@gmail.com
 - 微信号：pengchongfu
 
 ---
