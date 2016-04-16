@@ -2,21 +2,30 @@ import React from 'react';
 import Marked from 'marked';
 
 var page1=`
-# 联系方式
-
-- 手机：18810665001
-- Email：pengchongfu@gmail.com
-- 微信号：pengchongfu
-
----
-
 # 个人信息
 
 - 彭崇甫/男/1992
 - 本科/清华大学工程力学与航天航空工程专业/2015年7月毕业
 - 个人网站：[pengchongfu.com](http://pengchongfu.com)
-- Github：[https://github.com/steinsphang](https://github.com/steinsphang)
-- 期望职位：前端开发工程师
+- GitHub：[https://github.com/steinsphang](https://github.com/steinsphang)
+
+---
+
+# 联系方式
+
+- 手机：18810665001
+- 邮箱：pengchongfu@gmail.com
+- 微信号：pengchongfu
+
+---
+
+# 技能清单
+
+- 计算机基础：了解基本的数据结构和算法以及网络原理知识
+- 前端：javascript、html、css
+- 开发框架：jquery、bootstrap
+- 开发工具：git、webpack
+- 后端：node
 
 ---
 
@@ -31,17 +40,9 @@ var page1=`
 
 - 服务器采用node的express模块搭建
 - 使用html5的audio标签实现在线音乐功能
-- 使用node的nodemailer模块实现发送邮件功能
 - 使用reactjs编写、webpack打包简历
-
----
-
-# 技能清单
-
-- 计算机基础：了解基本的数据结构和算法以及网络原理知识
-- 前端语言：javascript、html、css
-- 开发工具：linux、git
-- 开发框架：jquery、ajax
+- 使用ajax以及node的nodemailer模块实现发送邮件功能
+- 使用原生js完成小游戏的编写
 
 ---
 
@@ -72,7 +73,7 @@ var page2=`
 var page3=`
 # 更多
 
-刚学前端编程的时候写过几个小游戏,请点击[这里](http://pengchongfu.com)
+彭崇甫的个人网站,请点击[这里](http://pengchongfu.com)
 `;
 page1=Marked(page1);
 page2=Marked(page2);
