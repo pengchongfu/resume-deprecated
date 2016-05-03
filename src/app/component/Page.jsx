@@ -44,6 +44,11 @@ var page1=`
 - 使用ajax以及node的nodemailer模块实现发送邮件功能
 - 使用原生js完成小游戏的编写
 
+个人项目：
+
+- 研究web微信的通信协议，调用request模块完成node版的命令行微信
+- 用XMLHttpRequest替代request模块，完成chrome上的最小功能微信插件
+
 ---
 
 # 致谢
