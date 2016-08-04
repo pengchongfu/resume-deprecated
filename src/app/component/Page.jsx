@@ -2,57 +2,76 @@ import React from 'react';
 import Marked from 'marked';
 
 var page1=`
-# 个人信息
+## 个人信息
 
-- 彭崇甫/男/1992
-- 本科/清华大学工程力学与航天航空工程专业/2015年7月毕业
-- 个人网站：[pengchongfu.com](http://pengchongfu.com)
-- GitHub：[https://github.com/steinsphang](https://github.com/steinsphang)
+**姓名**：彭崇甫
 
----
+**性别**：男
 
-# 联系方式
+**出生年月**：1992年11月
 
-- 手机：18810665001
-- 邮箱：pengchongfu@gmail.com
-- 微信号：pengchongfu
+**籍贯**：广西-贺州
 
----
+**学校专业**：清华大学工程力学与航天航空工程
 
-# 技能清单
+**电话**：18810665001
 
-- 计算机基础：了解基本的数据结构和算法以及网络原理知识
-- 前端：javascript、html、css
-- 开发框架：jquery、bootstrap
-- 开发工具：git、webpack
-- 后端：node
+**Email**：pengchongfu@gmail.com
 
----
+**个人网站**：http://pengchongfu.com/
 
-# 项目经历
+**博客**：http://blog.pengchongfu.com/
 
-实习（北京一维弦科技有限责任公司 2015.11)：
+**github**：https://github.com/steinsphang
 
-- 使用foundation5和node搭建公司主页
-- 实现从浏览器提交附件并发送邮件的功能
+## 自我简介
 
-个人网站：
+自学前端知识，掌握JavaScript、DOM和BOM相关知识。关注前端技术领域的发展，学习并尝试过react.js、vue.js和electron等技术。
 
-- 服务器采用node的express模块搭建
-- 使用html5的audio标签实现在线音乐功能
-- 使用reactjs编写、webpack打包简历
-- 使用ajax以及node的nodemailer模块实现发送邮件功能
-- 使用原生js完成小游戏的编写
+了解常用的jQuery、bootstrap等前端开发框架。有后端开发经验，使用过node以及flask，能够独立开发前后端完成一个基本的web应用。
 
-个人项目：
+## 技术能力
 
-- 研究web微信的通信协议，调用request模块完成node版的命令行微信
-- 用XMLHttpRequest替代request模块，完成chrome上的最小功能微信插件
+* 基本掌握JavaScript、CSS、HTML以及各种JS、CSS框架来搭建Web应用。
+* 熟练使用JavaScript开发程序，了解原生JavaScript以及框架和类库的使用。
+* 了解node相关开发，以及前端工程化技术。
 
----
+## 个人经历
+* 2011年进入清华大学航天航空学院学习。
+* 2015年7月，本科毕业之后自学编程，并且专注于web前端。
+* 2015年11月，在北京一维弦科技有限责任公司实习。使用foundation5和node搭建公司主页，实现提交附件以及服务器端邮件发送。
 
-# 致谢
-感谢您花时间阅读我的简历
+## 作品
+
+### [server](https://github.com/steinsphang/server)
+项目地址：http://pengchongfu.com/
+
+* 后端采用node的express框架
+* 简历为使用react.js完成的单页应用
+* 使用html5完成音乐播放功能
+* 使用原生js完成的几个小游戏
+* 使用ajax将消息传输到后端并发送邮件
+
+### [wechat-node](https://github.com/steinsphang/wechat-node)
+调用web微信接口，实现的一个node版的命令行微信
+
+### [wx4work](https://github.com/steinsphang/wx4work)
+调用web微信接口，实现的一个微信chrome插件，方便收发消息
+
+### [tap-raser](https://github.com/guzhaoyuan/tap-raser)
+项目地址：http://pengchongfu.com/tap-raser
+
+一款使用three.js完成的简单小游戏
+
+### [pixivSearch](https://github.com/steinsphang/pixivSearch)
+项目地址：http://pengchongfu.com:3000/
+
+pixiv搜图工具，能够方便搜索pixiv上某个标签下收藏数较高的作品
+
+前端采用bootstrap，后端为flask
+
+### [wx_vue](https://github.com/steinsphang/wx_vue)
+使用electron以及vue.js实现的微信桌面版客户端
 `;
 
 
